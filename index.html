@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input id="display" placeholder="Primer numero"></input>
+      <input id="display" placeholder="Segundo numero"></input>
+      <input id="display" placeholder="Resultado"></input>
+      <div class="buttons">
+        <button onclick="ingresarOperador('/')">/</button>
+
+        <button onclick="ingresarOperador('*')">*</button>
+
+        <button onclick="ingresarOperador('-')">-</button>
+        <button onclick="limpiar()">C</button>
+        <button onclick="calcular()">=</button>
+        <button onclick="ingresaroperador('+')">+</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
