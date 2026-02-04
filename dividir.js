@@ -9,9 +9,9 @@ $(document).ready(function(){
         let resultadoFinal;
 
         if(isNaN(num1) || isNaN(num2)) {
-            resultadoFinal = "No válido.";
+            resultadoFinal = "Error: introduce números.";
         } else if(num2 === 0) {
-            resultadoFinal = "No válido.";
+            resultadoFinal = "Error: no dividas entre 0.";
         } else {
             const operacion = num1 / num2;
             resultadoFinal = Number.isInteger(operacion) ? operacion : parseFloat(operacion.toFixed(8));
