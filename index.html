@@ -8,22 +8,22 @@
   </head>
   <body>
     <div class="calculator">
-      <input id="display" placeholder="Primer numero"></input>
-      <input id="display" placeholder="Segundo numero"></input>
-      <input id="display" placeholder="Resultado"></input>
+      <input id="num1" type="number" placeholder="Primer numero" />
+      <input id="num2" type="number" placeholder="Segundo numero" />
+      <input id="resultado" readonly placeholder="Resultado" />
+
       <div class="buttons">
-        <button onclick="ingresarOperador('/')">/</button>
-
-        <button onclick="ingresarOperador('*')">*</button>
-
-        <button onclick="ingresarOperador('-')">-</button>
-        <button onclick="limpiar()">C</button>
-        <button onclick="calcular()">=</button>
-        <button onclick="ingresaroperador('+')">+</button>
+        <button id="btnCalcular">/</button>
+        <button id="btnMultiplicar">*</button> <button id="restar">-</button>
+        <button id="sumar">+</button> <button id="limpiar">C</button>
       </div>
     </div>
 
-    <script src="script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="sumar.js"></script>
+    <script src="operaciones.js"></script>
+    <script src="multiplicar.js"></script>
+    <script src="dividir.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
