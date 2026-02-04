@@ -1,22 +1,24 @@
-$(document).ready(function(){
-    $('#btnCalcular').on('click', function(){
-        const dividendo = $('#num1').val();
-        const divisor = $('#num2').val();
+$(document).ready(function () {
+  $("#btnCalcular").on("click", function () {
+    const dividendo = $("#num1").val();
+    const divisor = $("#num2").val();
 
-        const num1 = parseFloat(dividendo);
-        const num2 = parseFloat(divisor);
+    const num1 = parseFloat(dividendo);
+    const num2 = parseFloat(divisor);
 
-        let resultadoFinal;
+    let resultadoFinal;
 
-        if(isNaN(num1) || isNaN(num2)) {
-            resultadoFinal = "Error: introduce números.";
-        } else if(num2 === 0) {
-            resultadoFinal = "Error: no dividas entre 0.";
-        } else {
-            const operacion = num1 / num2;
-            resultadoFinal = Number.isInteger(operacion) ? operacion : parseFloat(operacion.toFixed(8));
-        }
+    if (isNaN(num1) || isNaN(num2)) {
+      resultadoFinal = "Error: introduce números.";
+    } else if (num2 === 0) {
+      resultadoFinal = "Error: no dividas entre 0.";
+    } else {
+      const operacion = num1 / num2;
+      resultadoFinal = Number.isInteger(operacion)
+        ? operacion
+        : parseFloat(operacion.toFixed(8));
+    }
 
-        $('#resultado').text("Resultado: " + resultadoFinal);
-    });
+    $("#resultado").val(resultadoFinal);
+  });
 });
