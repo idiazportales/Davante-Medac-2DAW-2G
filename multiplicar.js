@@ -8,4 +8,4 @@ $(document).ready(function () {
     });
 });
 
-console.log(multiplicacion(5,6))
+
