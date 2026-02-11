@@ -1,4 +1,4 @@
-import { sumar, restar, multiplicar, dividir } from "./operaciones.js";
+import { sumar, restar } from "./operaciones.js";
 
 $(document).ready(function () {
   const $num1 = $("#num1");
