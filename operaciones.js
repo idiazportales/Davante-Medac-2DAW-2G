@@ -1,11 +1,22 @@
-$(document).ready(() =>{
+// operaciones.js
+export function sumar(a, b) {
+  return a + b;
+}
 
-    $("#restar").click(() =>{
+export function restar(a, b) {
+  return a - b;
+}
 
-        let num1 = parseFloat($('#num1').val()) || 0;
-        let num2 = parseFloat($('#num2').val()) || 0;
+export function multiplicar(a, b) {
+  return a * b;
+}
 
-        const resultado = num1-num2;
-        $('#resultado').val(resultado);
-    });
-})
+export function dividir(a, b) {
+  if (isNaN(a) || isNaN(b) || b === 0) {
+    return "No válido.";
+  }
+  const operacion = a / b;
+  return Number.isInteger(operacion)
+    ? operacion
+    : parseFloat(operacion.toFixed(8));
+}
